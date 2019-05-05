@@ -1,0 +1,278 @@
+:root
+{
+    --heigCabezera: 100px;
+    --tamanoIconos: 30px;
+    --bgColor: rgb(45, 44, 58);
+    --bgColorDark: rgb(30, 30, 39);
+    --colorAzul: #304FFE;
+    --fontThin: 'Open Sans', sans-serif;
+}
+
+.test
+{
+    border-style: solid;
+
+}
+body
+{
+    height: 100%;
+    background-color: var(--bgColorDark);
+}
+
+/*POSICIONADORES*/
+
+.izquierda
+{
+    float: left;
+}
+.derecha
+{
+    float: right;
+}
+
+/******************************************/
+
+/*Colores*/
+
+.azul
+{
+    color: #304FFE !important;
+}
+
+.darkGray
+{
+    color: #a9a9a9 !important;
+}
+
+/****************************************/
+
+#contenedor
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 320px;
+    height: 520px;
+    background-color: var(--bgColor);
+    border-style: solid;
+    border-color: orangered;
+}
+
+/*Cabezera*/
+
+#cabezera
+{
+    background-image: url(imagenes/banner.png);
+    background-size: 100%;
+    background-position-y: -40px;
+    width: 100%;
+    height: var(--heigCabezera);
+}
+
+#atras
+{
+    width: var(--tamanoIconos);
+    height: var(--tamanoIconos);
+    margin: 10px;
+    background-image: url(imagenes/arrow-left.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#menu
+{
+    width: var(--tamanoIconos);
+    height: var(--tamanoIconos);
+    margin: 10px;
+    background-image: url(imagenes/dots-vertical.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/*******************************************************/
+
+/*Post Cabezera*/
+#logo
+{
+    background-image: url(imagenes/logo.png);
+    background-size: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+#contenedor-postCabezera
+{
+    height: 40px;
+}
+
+#editarPerfil
+{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    border-width: 0.8px;
+    border-color: darkgray;
+}
+
+#editarPerfil h4
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    font-family: var(--fontThin);
+    font-size: 13px;
+    
+}
+/****************************************************************** */
+
+/*Info*/
+
+#contenedorInfo
+{
+    width: 100%;
+    height: 200px;
+}
+#contenedorInfo h1
+{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#contenedorInfo h3
+{
+    width: fit-content;
+    height: fit-content;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: var(--fontThin);
+    font-size: 13px;
+    color: darkgray;
+}
+
+#contenedorInfo p
+{
+    width: fit-content;
+    height: fit-content;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-family: var(--fontThin);
+    font-size: 13px;
+    color: white;
+}
+
+.miniP
+{
+    margin-top: 0px !important;
+}
+
+#contenedorInfo ul
+{
+    margin: 0;
+    margin-left: 10px;
+    width: fit-content;
+    padding: 0px;
+}
+
+#contenedorInfo > ul:nth-child(5)
+{
+    transform: translateY(-10px)
+}
+
+#contenedorInfo > ul:nth-child(6)
+{
+    transform: translateY(-20px)
+}
+#contenedorInfo li
+{
+    list-style: none;
+    float: left;
+}
+
+#contenedorInfo img
+{
+    height: 15px;
+}
+
+/*************************************************************************/
+
+/*Tabs*/
+
+#contenedor-tabs
+{
+    margin-top: -20px !important;
+    margin-bottom: 0px;
+    height: fit-content;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    display: inline-table;
+}
+
+#contenedor-tabs li
+{
+    float: left;
+    margin-left: 10px;
+    font-family: var(--fontThin);
+    font-size: 13px;
+    color: darkgray;
+    cursor: pointer;
+}
+
+#contenedor-tabs > li:nth-child(1)
+{
+    color: var(--colorAzul);
+    border-bottom-style: solid;
+    height: 45px;
+    width: 60px;
+    text-align: center;
+    margin-left: 0 !important;
+}
+
+#contenedor-tabs > li:nth-child(2)
+{
+    margin-left: 25px;
+}
+
+#contenedor-tabs > li:nth-child(3)
+{
+    margin-left: 25px;
+}
+
+/*************************************************/
+
+/*Feed*/
+
+#contenedor-feed
+{
+    height: 125px;
+    transform: translateY(-8px);
+    background-color: var(--bgColorDark);
+
+}
+
+/*******************************************************/
